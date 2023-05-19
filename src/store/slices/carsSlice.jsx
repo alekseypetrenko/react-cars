@@ -25,4 +25,4 @@ const carsSlice = createSlice({
 });
 
 export const { changeSearchTerm, addCar, removeCar } = carsSlice.actions;
-export const carReducer = carsSlice.reducer;
+export const carsReducer = carsSlice.reducer;
