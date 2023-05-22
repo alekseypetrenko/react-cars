@@ -13,8 +13,12 @@ const formSlice = createSlice({
     changeCost(state, action) {
       state.cost = action.payload;
     },
+    clearValues(state) {
+      state.cost = 0;
+      state.name = "";
+    },
   },
 });
 
-export const { changeName, changeCost } = formSlice.actions;
+export const { changeName, changeCost, clearValues } = formSlice.actions;
 export const formReducer = formSlice.reducer;

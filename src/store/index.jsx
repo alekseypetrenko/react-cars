@@ -6,7 +6,12 @@ import {
   removeCar,
   changeSearchTerm,
 } from "./slices/carsSlice";
-import { formReducer, changeCost, changeName } from "./slices/formSlice";
+import {
+  formReducer,
+  changeCost,
+  changeName,
+  clearValues,
+} from "./slices/formSlice";
 
 const store = configureStore({
   reducer: {
@@ -15,4 +20,12 @@ const store = configureStore({
   },
 });
 
-export { store, changeName, changeSearchTerm, addCar, removeCar, changeCost };
+export {
+  store,
+  changeName,
+  changeSearchTerm,
+  addCar,
+  removeCar,
+  changeCost,
+  clearValues,
+};
