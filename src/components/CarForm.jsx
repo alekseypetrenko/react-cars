@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { changeName, changeCost, addCar, clearValues } from "../store";
+import { changeName, changeCost, addCar } from "../store";
 
 function CarForm() {
   const dispatch = useDispatch();
@@ -23,7 +23,6 @@ function CarForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
     dispatch(addCar({ name, cost }));
-    dispatch(clearValues());
   };
 
   return (
